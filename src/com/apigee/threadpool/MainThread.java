@@ -12,9 +12,9 @@ public class MainThread {
 	     Job5 job5 = new Job5();
 	     ThreadPoolWithJobAffinity threadPoolWithJobAffinity = new ThreadPoolWithJobAffinityImpl(5);
 	     int count = 0;
-	     while(count < 10) {
+	     while(count < 5) {
 	    	 Random random = new Random();
-	    	 int i = random.nextInt(6);
+	    	 int i = random.nextInt(5);
 	    	 
 	    	 if(i ==0) {
 	    		 threadPoolWithJobAffinity.submit("job1", job1);
